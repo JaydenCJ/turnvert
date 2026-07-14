@@ -1,0 +1,54 @@
+{
+  "name": "turnvert",
+  "version": "0.1.0",
+  "description": "Converts Claude Code, Codex, Aider, and OpenHands session logs into one normalized JSONL schema. Zero runtime dependencies, fully offline.",
+  "author": "JaydenCJ <aisingioro.kiyon@gmail.com>",
+  "license": "MIT",
+  "type": "module",
+  "bin": {
+    "turnvert": "dist/cli.js"
+  },
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "examples",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=22.13"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "npm run build && node --test \"tests/*.test.mjs\"",
+    "smoke": "bash scripts/smoke.sh"
+  },
+  "keywords": [
+    "agent-logs",
+    "jsonl",
+    "claude-code",
+    "codex",
+    "aider",
+    "openhands",
+    "normalization",
+    "session-logs"
+  ],
+  "devDependencies": {
+    "typescript": "^5.7.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JaydenCJ/turnvert.git"
+  },
+  "homepage": "https://github.com/JaydenCJ/turnvert#readme",
+  "bugs": {
+    "url": "https://github.com/JaydenCJ/turnvert/issues"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "id": 1,
+  "timestamp": "2026-07-07T08:00:01.000000",
+  "source": "user",
+  "action": "message",
+  "args": { "content": "first" }
+}

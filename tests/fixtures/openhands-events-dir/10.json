@@ -1,0 +1,7 @@
+{
+  "id": 10,
+  "timestamp": "2026-07-07T08:00:10.000000",
+  "source": "agent",
+  "action": "message",
+  "args": { "content": "tenth" }
+}
